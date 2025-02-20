@@ -1,0 +1,107 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* src/App.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 中央揃えから上揃えに変更 */
+  padding: 20px;
+  justify-content: center;
+  gap: 10px;
+  width: 85vw;
+}
+
+.boardContainer {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.timeline {
+  text-align: left; /* 左揃えにする */
+}
+
+.sound-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px; /* 幅を指定 */
+  height: 60px; /* 高さを指定 */
+  font-size: 1.5rem; /* フォントサイズを調整 */
+  border-radius: 50%; /* 真円にするために50%に設定 */
+  background-color: #000000;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.floating-button:hover {
+  background-color: #333333;
+}
+
+.options {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.options button {
+  margin: 5px 0;
+  width: 60px; /* 幅を指定 */
+  height: 60px; /* 高さを指定 */
+  font-size: 1.5rem;
+  border: none;
+  background-color: #000000;
+  color: white;
+  border-radius: 50%; /* 真円にするために50%に設定 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.options button:hover {
+  background-color: #333333;
+}
+
+.fly-text {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  font-size: 3rem; /* 大きくする */
+  font-weight: bold; /* 太くする */
+  color: #0056b3; /* 濃くする */
+  pointer-events: none;
+}
