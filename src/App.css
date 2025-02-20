@@ -24,14 +24,13 @@ html, body {
 /* src/App.css */
 .container {
   width: 100%;
-  padding: 10px;
   box-sizing: border-box;
 }
 
 .boardContainer {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -103,7 +102,7 @@ html, body {
   bottom: 80px;
   right: 40px;
   font-size: 3rem; /* 大きくする */
-  font-weight: bold; /* 太くする */
+  font-weight: bold; /*  npm install react-responsive 太くする */
   color: #0056b3; /* 濃くする */
   pointer-events: none;
 }

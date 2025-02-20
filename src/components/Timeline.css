@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-height: calc(60vh - 100px); /* カードの高さに合わせて調整 */
+  overflow-y: auto;
+  padding-right: 10px; /* スクロールバーのスペースを確保 */
 }
 
 .timeline-item {
@@ -16,7 +19,7 @@
   max-width: 60%;
   word-wrap: break-word;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 0px; /* 吹き出し間のスペース */
 }
 
 .timeline-item.left {

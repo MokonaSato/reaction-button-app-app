@@ -11,6 +11,7 @@ const Home: React.FC = () => {
   const [flyText, setFlyText] = useState<string | null>(null);
   const [flyTextColor, setFlyTextColor] = useState<string>('');
 
+
   const handleButtonClick = (label: string) => {
     setTimeline(prevTimeline => [...prevTimeline, label]);
   };

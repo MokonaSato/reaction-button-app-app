@@ -27,7 +27,7 @@ const SoundBoard: React.FC<SoundBoardProps> = ({ onButtonClick }) => {
   };
 
   return (
-    <Card style={{ width: '90%', padding: '20px'}}>
+    <Card style={{ width: '100%', padding: '20px'}}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h2>サウンドボード</h2>
         <Button variant="secondary" size="icon" onClick={toggleMute} className="ml-2">
