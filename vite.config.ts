@@ -28,7 +28,10 @@ export default defineConfig({
         target: 'https://reaction-button-app-server-741657062688.asia-northeast1.run.app',
         changeOrigin: true,
       },
-    }
+    },
+    allowedHosts: [
+      'reaction-button-app-app-741657062688.asia-northeast1.run.app'
+    ]
   },
   css: {
     postcss: './postcss.config.js'
