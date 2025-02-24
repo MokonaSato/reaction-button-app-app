@@ -39,11 +39,13 @@ export const useWebSocket = (
               setFlyText(message.payload);
               setFlyTextColor(getRandomColor());
             } else if (message.type === 'sound') {
-              console.log('isMuted in WebSocket message handler: ', isMutedRef.current);
-              playSound(message.payload, isMutedRef.current);
               setTimeline((prevTimeline) => {
                 if (!prevTimeline.some(msg => msg.id === message.id)) {
                   const newMessage = { id: message.id, text: message.payload, isSelf: message.clientId === clientId.current };
+                  if (!newMessage.isSelf) {
+                    console.log('isMuted in WebSocket message handler: ', isMutedRef.current);
+                    playSound(message.payload, isMutedRef.current);
+                  }
                   return [...prevTimeline, newMessage];
                 }
                 return prevTimeline;
