@@ -4,7 +4,7 @@ import Chat from './pages/Chat';
 
 function App() {
   return (
-    <Router basename={import.meta.env.DEV ? "/" : "/reaction-button-app"}>
+    <Router>
       <Routes>
         <Route path="/" element={<RoomGenerator />} />
         <Route path="/room" element={<Chat />} />
