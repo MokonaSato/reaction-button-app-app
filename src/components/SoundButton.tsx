@@ -18,8 +18,7 @@ const SoundButton: React.FC<SoundButtonProps> = ({ label, onClick, isMuted }) =>
   return (
     <Button
       onClick={handleClick}
-      className="sound-button"
-      variant="secondary"
+      className="sound-button button"
     >
       {label}
     </Button>

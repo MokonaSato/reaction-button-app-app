@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Card } from '@/components/ui/card';
+import { Card, CardTitle, CardHeader, CardContent } from '@/components/ui/card';
 import './Timeline.css';
 
 interface TimelineProps {
@@ -16,9 +16,11 @@ const Timeline: React.FC<TimelineProps> = ({ timeline }) => {
   }, [timeline]);
 
   return (
-    <Card style={{ width: '100%', padding: '20px', height: 'calc(60vh - 70px)' }}>
-      <h2 className="timeline-title">タイムライン</h2>
-      <div className="timeline-container">
+    <Card className="card" style={{ height: 'calc(60vh - 70px)' }}>
+      <CardHeader className="card-header">
+      <CardTitle className="card-title">タイムライン</CardTitle>
+      </CardHeader>
+      <CardContent className="card-content timeline-container">
         {timeline.map((item, index) => (
           <div
             key={index}
@@ -29,7 +31,7 @@ const Timeline: React.FC<TimelineProps> = ({ timeline }) => {
           </div>
         ))}
         <div ref={timelineEndRef} />
-      </div>
+      </CardContent>
     </Card>
   );
 };

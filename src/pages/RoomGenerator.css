@@ -1,0 +1,68 @@
+/* RoomGenerator.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 1rem;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 28rem;
+}
+
+.title {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.875rem;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.25rem;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  border-radius: 0.25rem;
+}
+
+.card {
+  height: 100px; /* 高さを揃える */
+}
+
+.input-container {
+  display: flex;
+  align-items: center; /* 高さ中央揃え */
+  gap: 0.5rem;
+}
+
+.input {
+  flex-grow: 1;
+  height: 2.5rem; /* 高さを大きく */
+}
+
+.icon-button {
+  background-color: #1f2937;
+  width: 3rem;
+  height: 2.5rem; /* 高さを大きく */
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.icon-button:hover {
+  background-color: #111827;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem; /* ここでスペースを調整 */
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card } from '@/components/ui/card';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Volume2, VolumeX } from 'lucide-react';
 import SoundButton from '@/components/SoundButton';
@@ -17,15 +17,18 @@ const SoundBoard: React.FC<SoundBoardProps> = ({ onButtonClick, isMuted, setIsMu
   };
 
   return (
-    <Card style={{ width: '100%', padding: '20px'}}>
+    <Card className="card" style={{ height: '25vh' }}>
+      <CardHeader className="card-header">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h2>サウンドボード</h2>
-        <Button variant="secondary" size="icon" onClick={handleMuteToggle} className="ml-2">
-          {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
-        </Button>
+      <CardTitle className="card-title">サウンドボード</CardTitle>
+        <Button className="button" size="icon" onClick={handleMuteToggle} style={{ width: '50px', height: '35px' }}>
+        {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
+      </Button>
       </div>
+      </CardHeader>
+      <CardContent className="card-content">
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginTop: '20px' }}>
-      {Object.keys(soundMap).map((label, index) => (
+        {Object.keys(soundMap).map((label, index) => (
           <SoundButton
             key={index}
             label={label}
@@ -34,6 +37,7 @@ const SoundBoard: React.FC<SoundBoardProps> = ({ onButtonClick, isMuted, setIsMu
           />
         ))}
       </div>
+      </CardContent>
     </Card>
   );
 };
