@@ -20,7 +20,7 @@ const SoundBoard: React.FC<SoundBoardProps> = ({ onButtonClick, isMuted, setIsMu
     <Card className="card" style={{ height: '25vh' }}>
       <CardHeader className="card-header">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-      <CardTitle className="card-title">サウンドボード</CardTitle>
+      <CardTitle className="card-title">リアクション</CardTitle>
         <Button className="button" size="icon" onClick={handleMuteToggle} style={{ width: '50px', height: '35px' }}>
         {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
       </Button>
