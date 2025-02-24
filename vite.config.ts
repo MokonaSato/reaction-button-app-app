@@ -13,7 +13,7 @@ export default defineConfig({
   // base: '/reaction-button-app/',
   server: {
     host: '0.0.0.0',
-    port: 5173,
+    port: 8080,
     strictPort: true,
     proxy: {
       '/chat': {
