@@ -1,24 +1,23 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { playSound } from '../lib/soundPlayer'; // 共通の関数をインポート
 
 interface SoundButtonProps {
   label: string;
-  soundUrl: string;
-  onClick: () => void;
+  onClick: (label: string) => void;
+  isMuted: boolean;
 }
 
-const SoundButton: React.FC<SoundButtonProps> = ({ label, soundUrl, onClick }) => {
-  const [audio] = useState(new Audio(soundUrl));
-
-  const playSound = () => {
-    audio.currentTime = 0; // 再生位置をリセット
-    audio.play();
-    onClick();
+const SoundButton: React.FC<SoundButtonProps> = ({ label, onClick, isMuted }) => {
+  const handleClick = () => {
+    console.log('isMuted in handleClick: ', isMuted); // ここでisMutedの値を確認
+    playSound(label, isMuted); // 共通の関数を使用
+    onClick(label);
   };
 
   return (
     <Button
-      onClick={playSound}
+      onClick={handleClick}
       className="sound-button"
       variant="secondary"
     >

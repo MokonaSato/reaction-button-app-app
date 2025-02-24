@@ -3,7 +3,7 @@ import { Card } from '@/components/ui/card';
 import './Timeline.css';
 
 interface TimelineProps {
-  timeline: string[];
+  timeline: { text: string; isSelf: boolean }[];
 }
 
 const Timeline: React.FC<TimelineProps> = ({ timeline }) => {
@@ -22,10 +22,10 @@ const Timeline: React.FC<TimelineProps> = ({ timeline }) => {
         {timeline.map((item, index) => (
           <div
             key={index}
-            className={`timeline-item ${index % 3 === 0 ? 'right' : 'left'}`}
+            className={`timeline-item ${item.isSelf ? 'right' : 'left'}`}
           >
-            {item}
-            <div className={`timeline-arrow ${index % 2 === 0 ? 'left-arrow' : 'right-arrow'}`} />
+            {item.text}
+            <div className={`timeline-arrow ${item.isSelf ? 'left-arrow' : 'right-arrow'}`} />
           </div>
         ))}
         <div ref={timelineEndRef} />
