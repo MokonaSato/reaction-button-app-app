@@ -86,7 +86,7 @@ html, body {
   height: 60px; /* 高さを指定 */
   font-size: 1.5rem; /* フォントサイズを調整 */
   border-radius: 50%; /* 真円にするために50%に設定 */
-  background-color: #000000;
+  background-image: linear-gradient(to right, #a855f7, #3b82f6);
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -96,7 +96,7 @@ html, body {
 }
 
 .floating-button:hover {
-  background-color: #111827;
+  background-image: linear-gradient(to right, #9333ea, #2563eb);
 }
 
 .options {
@@ -113,7 +113,7 @@ html, body {
   height: 60px; /* 高さを指定 */
   font-size: 1.5rem;
   border: none;
-  background-color: #1f2937;
+  background-image: linear-gradient(to right, #a855f7, #3b82f6);
   color: white;
   border-radius: 50%; /* 真円にするために50%に設定 */
   display: flex;
@@ -124,7 +124,7 @@ html, body {
 }
 
 .options button:hover {
-  background-color: #111827;
+  background-image: linear-gradient(to right, #9333ea, #2563eb);
 }
 
 .fly-text {
