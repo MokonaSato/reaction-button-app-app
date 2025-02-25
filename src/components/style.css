@@ -1,0 +1,404 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gradient {
+  background: linear-gradient(to bottom, #f3e8ff, #e0f7ff);
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.my-6 {
+  margin: 1.5rem 0;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.text-purple-500 {
+  color: #9f7aea;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.bg-clip-text {
+  background-clip: text;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #9f7aea, #4299e1);
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.border-0 {
+  border: none;
+}
+
+.bg-white-80 {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.bg-gradient-to-bl {
+  background: linear-gradient(to bottom left, #e9d8fd, transparent);
+}
+
+.rounded-bl-full {
+  border-bottom-left-radius: 9999px;
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.bg-white-70 {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.border-purple-100 {
+  border-color: #e9d8fd;
+}
+
+.hover\:bg-purple-50:hover {
+  background-color: #faf5ff;
+}
+
+.hover\:border-purple-200:hover {
+  border-color: #d6bcfa;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.border-blue-100 {
+  border-color: #ebf8ff;
+}
+
+.hover\:bg-blue-50:hover {
+  background-color: #ebf8ff;
+}
+
+.hover\:border-blue-200:hover {
+  border-color: #bee3f8;
+}
+
+.border-pink-100 {
+  border-color: #fed7e2;
+}
+
+.hover\:bg-pink-50:hover {
+  background-color: #fff5f7;
+}
+
+.hover\:border-pink-200:hover {
+  border-color: #fbb6ce;
+}
+
+.border-amber-100 {
+  border-color: #fefcbf;
+}
+
+.hover\:bg-amber-50:hover {
+  background-color: #fffbeb;
+}
+
+.hover\:border-amber-200:hover {
+  border-color: #faf089;
+}
+
+.text-gray-800 {
+  color: #2d3748;
+}
+
+.text-gray-400 {
+  color: #cbd5e0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #9f7aea, #4299e1);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-white-70 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.bg-white {
+  background-color: #f1f1f1;
+}
+
+.border-gray-200 {
+  border-color: #edf2f7;
+}
+
+.focus-visible\:ring-purple-400:focus-visible {
+  box-shadow: 0 0 0 3px rgba(159, 122, 234, 0.5);
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.hover\:from-purple-600:hover {
+  background: linear-gradient(to right, #805ad5, #3182ce);
+}
+
+.hover\:to-blue-600:hover {
+  background: linear-gradient(to right, #805ad5, #3182ce);
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card-padding {
+  padding: 1rem; /* ここでpaddingを増やします */
+}
+
+.card-title-small-bold {
+  font-size: 1rem; /* 文字サイズを小さく */
+  font-weight: bold; /* 太字にする */
+}
+
+.button-small {
+  height: 2rem; /* ボタンの高さを小さく */
+  font-size: 0.875rem; /* 文字サイズを小さく */
+  color: #000; /* 文字色を黒に */
+}
+
+.card-header-content-margin {
+  margin-bottom: 0.25rem; /* マージンを減らします */
+}
+
+.bubble-margin {
+  margin-bottom: 0.5rem; /* 吹き出し同士のマージンを設定 */
+}
+
+.bubble {
+  padding-top: 0.2rem; /* 文字がもう少し下から始まるように */
+  padding-bottom: 0.2rem; /* 文字がもう少し下から始まるように */
+  padding-left: 0.5rem; /* 文字がもう少し右から始まるように */
+  padding-right: 1rem; /* 文字がもう少し右から始まるように */
+  margin-bottom: 0.5rem; /* 吹き出し同士のマージンを設定 */
+  width: 50%; /* 吹き出しの幅を設定 */
+}
+
+.self-align-start {
+  align-self: flex-start; /* 左寄せ */
+}
+
+.self-align-end {
+  align-self: flex-end; /* 右寄せ */
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(60vh - 100px); /* カードの高さに合わせて調整 */
+  overflow-y: auto;
+  padding-right: 10px; /* スクロールバーのスペースを確保 */
+}

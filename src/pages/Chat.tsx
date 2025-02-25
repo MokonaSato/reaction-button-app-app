@@ -7,7 +7,9 @@ import { debugHelloEndpoint } from '../lib/websocket';
 import { useWebSocket } from '../hooks/useWebSocket';
 import { useTimeline } from '../hooks/useTimeline';
 import { useButtonHandlers } from '../hooks/useButtonHandlers';
-import '../App.css';
+import { MessageSquare } from 'lucide-react';
+import './Chat.css';
+
 
 const Chat: React.FC = () => {
   const [roomId, setRoomId] = useState<string>('default-room');
@@ -42,11 +44,18 @@ const Chat: React.FC = () => {
   });
 
   return (
-    <div className="container">
-      <div className="boardContainer">
+    <div className="app-container">
+      <div className="content-wrapper">
+        <div className="app-header">
+          <div className="header-inner">
+            <MessageSquare className="header-icon" />
+            <h1 className="header-title">
+              nanairo
+            </h1>
+          </div>
+        </div>
+
         <SoundBoard onButtonClick={handleButtonClick} isMuted={isMuted} setIsMuted={setIsMuted} />
-      </div>
-      <div className="boardContainer">
         <Timeline timeline={timeline} />
       </div>
       {showOptions && (
@@ -62,7 +71,7 @@ const Chat: React.FC = () => {
           {flyText}
         </animated.div>
       )}
-      <FloatingButton onClick={() => setShowOptions(!showOptions)} label="＋" />
+      <FloatingButton onClick={() => setShowOptions(!showOptions)} label="＋"/>
     </div>
   );
 };

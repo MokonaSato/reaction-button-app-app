@@ -5,8 +5,9 @@ import { debugHelloEndpoint } from '../lib/websocket';
 import { Card, CardHeader, CardContent, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { ArrowRight } from 'lucide-react';
+import { MessageSquare, Plus, Users, ArrowRight } from 'lucide-react';
 import './RoomGenerator.css'; // 追加
+import '../App.css'; // 追加
 
 const RoomGenerator: React.FC = () => {
   const navigate = useNavigate();
@@ -29,20 +30,28 @@ const RoomGenerator: React.FC = () => {
   };
 
   return (
-    <div className="container">
-      <div className="wrapper">
-        <div className="title">
-          ROOMIE
+    <div className="container-main">
+      <div className="content-wrapper">
+        <div className="header-section">
+          <div className="logo-container">
+            <MessageSquare className="icon-message" />
+            <h1 className="app-title">
+              nanairo
+            </h1>
+          </div>
+          <p className="app-subtitle">みんなとおしゃべりしよう！</p>
         </div>
-
-        <div className="space-y-4">
+        <div className="cards-container">
           <Card className="card">
+            <div className="card-decoration-purple"></div>
             <CardHeader className="card-header">
-              <CardTitle className="card-title">新しく部屋をつくる</CardTitle>
+              <CardTitle className="card-title">
+                <Plus className="icon-plus" />新しくルームをつくる
+              </CardTitle>
             </CardHeader>
             <CardContent className="card-content">
-              <Button 
-                className="button" 
+              <Button
+                className="button"
                 onClick={createRoom}
               >
                 作成
@@ -51,18 +60,22 @@ const RoomGenerator: React.FC = () => {
           </Card>
 
           <Card className="card">
+            <div className="card-decoration-blue"></div>
             <CardHeader className="card-header">
-              <CardTitle className="card-title">誰かの部屋に入る</CardTitle>
+              <CardTitle className="card-title">
+                <Users className="icon-users" />
+                友達のチャットに参加する
+              </CardTitle>
             </CardHeader>
             <CardContent className="card-content">
-              <div className="input-container">
-                <Input 
+              <div className="input-group">
+                <Input
                   id="roomId"
-                  placeholder="部屋ID入力" 
-                  className="input"
+                  placeholder="ルームIDを入力"
+                  className="input-room"
                 />
-                <Button 
-                  className="icon-button"
+                <Button
+                  className="button-join"
                   onClick={joinRoom}
                 >
                   <ArrowRight size={20} />
@@ -70,6 +83,8 @@ const RoomGenerator: React.FC = () => {
               </div>
             </CardContent>
           </Card>
+          <div className="footer"></div>
+          {/* <p>今すぐ友だちとチャットを始めよう！</p> */}
         </div>
       </div>
     </div>

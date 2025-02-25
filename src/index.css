@@ -1,5 +1,4 @@
 @tailwind base;
-
 @custom-variant dark (&:is(.dark *));
 @tailwind components;
 @tailwind utilities;
@@ -12,7 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-image: linear-gradient(to bottom, #faf5ff, #eff6ff);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,22 +21,11 @@
 
 body {
   margin: 0;
-  display: flex;
+  /* display: flex; */
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-/* src/index.css */
-h2 {
-  font-size: 1.2em;
-  line-height: 0.7;
-  margin: 5;
-}
 
 button {
   border-radius: 8px;
