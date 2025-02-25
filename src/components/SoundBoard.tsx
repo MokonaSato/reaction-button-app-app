@@ -20,7 +20,7 @@ const SoundBoard: React.FC<SoundBoardProps> = ({ onButtonClick, isMuted, setIsMu
   };
 
   return (
-    <Card className="shadow-lg border-0 bg-white-80 backdrop-blur-sm overflow-hidden card-padding" style={{ height: '20vh', marginBottom: '10px' }}>
+    <Card className="shadow-lg border-0 bg-white-80 backdrop-blur-sm overflow-hidden card-padding" style={{ height: '25vh', marginBottom: '10px' }}>
       <div className="absolute right-0 top-0 w-16 h-16 bg-gradient-to-bl rounded-bl-full opacity-70"></div>
       <CardHeader className="flex flex-row justify-between items-center">
         <CardTitle className="text-lg flex items-center gap-2 card-title-small-bold">
